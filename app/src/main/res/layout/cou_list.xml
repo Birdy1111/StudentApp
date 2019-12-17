@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/course_12"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="汇编语言"
+
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:id="@+id/course_34"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="课程设计"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/course_12"/>
+
+    <TextView
+        android:id="@+id/course_56"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="软件工程"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/course_34"/>
+    <TextView
+        android:id="@+id/course_78"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="数据挖掘"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/course_56"/>
+    <TextView
+        android:id="@+id/course_910"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="晚自习"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/course_78"/>
+    <ImageView
+        android:id="@+id/li_edit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginRight="10dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:text="编辑" />
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorred">
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="修改信息"
+        android:background="#33ffffff"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:text="Name:"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dip"
+            android:id="@+id/et_name" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:text="Sex:"
+            android:textSize="18sp"/>
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="200dp"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/rb_nan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="男"
+                android:textColor="#404040"
+                android:textSize="18sp" />
+            <RadioButton
+                android:id="@+id/rb_nv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="女"
+                android:textColor="#404040"
+                android:textSize="18sp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_etage_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="Age:" />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/tv_etage_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_etage_text"
+            android:paddingLeft="20dip"
+            android:inputType="number"
+            android:id="@+id/et_age" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_academy_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="Academy:" />
+        <Spinner
+            android:id="@+id/academy"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="academy">
+        </Spinner>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_major_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="Major:" />
+
+        <AutoCompleteTextView
+            android:id="@+id/et_major"
+            android:layout_width="200dp"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_traindate_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="Data:"    />
+        <EditText android:id="@+id/et_date"
+            android:layout_width="200dp"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/tv_traindate_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_traindate_text"
+            android:hint="      点击选择日期"
+            android:inputType="date"
+            android:paddingLeft="20dip"
+            android:focusable="false" />
+    </LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/bt_add"
+        android:text="确认提交"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        />
+</LinearLayout>
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@mipmap/menu1"
+    >
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/shape_btn_dark"
+        android:text="学生信息"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/score"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/shape_btn_dark"
+        android:text="学生成绩"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/course"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/shape_btn_dark"
+        android:text="学生课表"
+        android:textColor="#ffffff" />
+
+
+</LinearLayout>
